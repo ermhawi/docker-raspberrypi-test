@@ -1,8 +1,8 @@
-FROM hypriot/rpi-busybox-httpd
+FROM m4rcu5/lighttpd
 
-COPY index.html /www/index.html
+COPY index.html /var/www/localhost/htdocs/index.html
 
 LABEL Name="MyTest" \
       Version="0.1"
 	  
-EXPOSE 80
+EXPOSE 80 443
